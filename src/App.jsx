@@ -1,53 +1,17 @@
 import "./styles/main.css";
+//icons imports
+import vk from "./img/icons/vk.svg";
+import instagram from "./img/icons/instagram.svg";
+import twitter from "./img/icons/twitter.svg";
+import gitHub from "./img/icons/gitHub.svg";
+import linkedIn from "./img/icons/linkedIn.svg";
+//components imports
+import Navbar from "./components/navbar/Navbar.jsx";
 
 function App() {
   return (
     <div className="App">
-      <h1>Привет Мир!</h1>
-      <nav className="nav">
-        <div className="container">
-          <div className="nav-row">
-            <a href="./index.html" className="logo">
-              <strong>Freelancer</strong> portfolio
-            </a>
-
-            <button className="dark-mode-btn">
-              <img
-                src="./img/icons/sun.svg"
-                alt="Light mode"
-                className="dark-mode-btn__icon"
-              />
-              <img
-                src="./img/icons/moon.svg"
-                alt="Dark mode"
-                className="dark-mode-btn__icon"
-              />
-            </button>
-
-            <ul className="nav-list">
-              <li className="nav-list__item">
-                <a
-                  href="./index.html"
-                  className="nav-list__link nav-list__link--active"
-                >
-                  Home
-                </a>
-              </li>
-              <li className="nav-list__item">
-                <a href="./projects.html" className="nav-list__link">
-                  Projects
-                </a>
-              </li>
-              <li className="nav-list__item">
-                <a href="./contacts.html" className="nav-list__link">
-                  Contacts
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
+      <Navbar />
       <header className="header">
         <div className="header__wrapper">
           <h1 className="header__title">
@@ -89,27 +53,27 @@ function App() {
             <ul className="social">
               <li className="social__item">
                 <a href="#!">
-                  <img src="./img/icons/vk.svg" alt="Link" />
+                  <img src={vk} alt="Link" />
                 </a>
               </li>
               <li className="social__item">
                 <a href="#!">
-                  <img src="./img/icons/instagram.svg" alt="Link" />
+                  <img src={instagram} alt="Link" />
                 </a>
               </li>
               <li className="social__item">
                 <a href="#!">
-                  <img src="./img/icons/twitter.svg" alt="Link" />
+                  <img src={twitter} alt="Link" />
                 </a>
               </li>
               <li className="social__item">
                 <a href="#!">
-                  <img src="./img/icons/gitHub.svg" alt="Link" />
+                  <img src={gitHub} alt="Link" />
                 </a>
               </li>
               <li className="social__item">
                 <a href="#!">
-                  <img src="./img/icons/linkedIn.svg" alt="Link" />
+                  <img src={linkedIn} alt="Link" />
                 </a>
               </li>
             </ul>
