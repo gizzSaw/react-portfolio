@@ -6,21 +6,20 @@ import Home from "./pages/Home.jsx";
 import Projects from "./pages/Projects.jsx";
 import ProjectPage from "./pages/ProjectPage.jsx";
 import Contacts from "./pages/Contacts.jsx";
+import ScrollToTop from "./utils/scrollToTop.js";
 
 function App() {
   return (
     <div className="App">
       <Router>
+        <ScrollToTop />
         <Navbar />
-
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/project/:id" element={<ProjectPage />} />
           <Route path="/contacts" element={<Contacts />} />
         </Routes>
-
-        <ProjectPage />
-
         <Footer />
       </Router>
     </div>
