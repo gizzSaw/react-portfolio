@@ -8,7 +8,12 @@ const Projects = () => {
         <h2 className="title-1">Projects</h2>
         <ul className="projects">
           {projects.map((project, index) => (
-            <Project key={index} title={project.title} img={project.img} />
+            <Project
+              key={index} /* в нормальных проектах так не делать */
+              title={project.title}
+              img={project.img}
+              index={index}
+            />
           ))}
         </ul>
       </div>
